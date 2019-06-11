@@ -56,7 +56,7 @@ templates_path = ['sphinx_rtd_theme']
 
 #http://www.sphinx-doc.org/en/stable/theming.html
 html_search_language= u'zh' #self_add
-html_logo = './image/logo/logo1.jpg' #self_add
+#html_logo = './image/logo/logo1.jpg' #self_add
 html_theme = 'haiku' #self_add
 #html_theme ='sphinxdoc'
 #html_theme = "classic"
