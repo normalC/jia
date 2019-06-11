@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>望城区政府门户网站-工程竣工验收备案</title>
+<link href="../../../../../images/2016wc_index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../../../../images/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../../../../../images/jquery.SuperSlide.js"></script>
+</head>
+
+<body>
+<!--top_start-->
+<meta charset="utf-8">
+<script type="text/javascript" src="../../../../../images/accessbar1.js"></script>
+<script type="text/javascript" src="../../../../../images/fantiz.js"></script>
+<div class="top">
+  <div class="top_main">
+    <div class="tianqi">
+      <iframe width="280" scrolling="no" height="20" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&amp;id=34&amp;icon=1&amp;num=3&amp;py=wangcheng"></iframe>
+    </div>
+    <div class="gongneng"><a href="../../../../../fzlm/wzdt/">网站地图</a> | <a href="../../../../../rss/">RSS 订阅</a> | <a href="javascript:void();" id=zoom title=无障碍浏览工具 onclick="kqNav()">无障碍浏览</a> | <a id="StranS2T" href="javascript:StranS2T()" name="StranS2T" title="点击以繁体中文方式浏览">繁体中文</a>|<a id="StranT2S" href="javascript:StranT2S()" name="StranT2S" title="点击以简体中文方式浏览">简体中文</a> | <a onclick="SetHome(this,window.location)">设为首页</a> | <a onclick="javascript:addFavorite2()">添加收藏</a> </div>
+  </div>
+</div>
+
+<div class="header">
+  <div class="logo"> <a href="/"><img src="../../../../../images/2016wc_index_logo_2.png" width="420" height="100" /></a> </div>
+  <div class="rolls">
+    <MARQUEE scrollAmount="2" scrollDelay="60" direction="left" height="50" 
+onmouseover="op()" onmouseout="art()" align="left"  WIDTH=380;>
+<P align=left style="font-size:38px; color:#d03d02; font-weight:bold;">科学谋划	务实奋进	努力建设更加美丽强盛幸福的名望之城</P></MARQUEE>
+  </div>
+  <div class="serach">
+   <form target="_blank" method="get" onsubmit="checkTotalSearch();return false;" action="http://www.wangcheng.gov.cn/was5/web/search" name="search">
+    <input type="text" class="keyword" name="searchwords" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" id="user-defined01" />
+	<input name="searchword" type="hidden" value="" />
+	<input name="channelid" type="hidden" value="260487" />
+        <input name="fenlei" type="hidden" value="1" />
+	<input type="submit" class="btn" value="&nbsp;" id="user-defined02" />
+   </form>
+  </div>
+</div>
+
+<div class="nav">
+  <ul>
+    <li class="current nav1" style="width:200px;"> <a class="nav01" href="/">首    页</a></li>
+    <li class="nav1" style="width:200px;"><a href="../../../../../zjwc/">走进望城</a> </li>
+    <li class="nav1" style="width:200px;"><a href="../../../../">信息公开</a> </li>
+    <li class="nav1" style="width:200px;"><a href="../../../../../jdhy/">解读回应</a> </li>
+    <li class="nav1" style="width:200px;"><a href="http://zwfw.hunan.gov.cn/hnvirtualhall/430112999000/jsp/index.jsp" >办事服务</a> </li>
+    <li class="nav1" style="width:200px;"><a href="../../../../../zmhd/">互动交流</a> </li>
+  </ul>
+</div>
+<input id="ownChnl" type="hidden" value="行政备案" />
+<script type="text/javascript">
+	function checkTotalSearch(){
+		var sword = $.trim($("input[name=searchwords]").val());
+		if(!sword || sword=="请输入关键字"){
+			alert("请输入关键字");
+            return false;
+		}else{
+			$("input[name=searchword]").val(sword); 
+			document.search.submit();
+		}
+             
+	}
+        $(function(){
+        $('.nav1').each(function(){
+            if($.trim($(this).text()) == $('#ownChnl').val()){
+	        $(this).removeClass('current').addClass('current');
+		}else if($.trim($(this).text()) != $('#ownChnl').val()){$(this).removeClass('current');}
+            if($('#ownChnl').val() == ''){$('.nav1').first().addClass('current');}
+           
+	    });	
+    })
+
+
+// 设置为主页 
+function SetHome(obj, vrl) {
+  try {
+    obj.style.behavior = 'url(#default#homepage)';
+    obj.setHomePage(vrl);
+  } 
+  catch (e) {
+    if (window.netscape) {
+      try {
+        netscape.security.PrivilegeManager.enablePrivilege('UniversalXPConnect');
+      } 
+      catch (e) {
+        alert('此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为\'true\',双击即可。');
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage', vrl);
+    } else {
+      alert('您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入：' + vrl + '点击确定。');
+    }
+  }
+}
+function addFavorite2() {
+  var url = window.location;
+  var title = document.title;
+  var ua = navigator.userAgent.toLowerCase();
+  if (ua.indexOf('360se') > - 1) {
+    alert('由于360浏览器功能限制，请按 Ctrl+D 手动收藏！');
+  } 
+  else if (ua.indexOf('msie 8') > - 1) {
+    window.external.AddToFavoritesBar(url, title); //IE8
+  } 
+  else if (document.all) {
+    try {
+      window.external.addFavorite(url, title);
+    } catch (e) {
+      alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+    }
+  } 
+  else if (window.sidebar) {
+    window.sidebar.addPanel(title, url, '');
+  } 
+  else {
+    alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+  }
+}
+</script>
+<!--top_end--> 
+<!--main_start-->
+<div class=main>
+  <p class="dqwz"> 当前位置： <a href="../../../../../" target="_blank" title="首页" class="CurrChnlCls">首页</a>&nbsp;>&nbsp;<a href="../../../../" target="_blank" title="信息公开" class="CurrChnlCls">信息公开</a>&nbsp;>&nbsp;<a href="../../../" target="_blank" title="行政审批项目流程清单" class="CurrChnlCls">行政审批项目流程清单</a>&nbsp;>&nbsp;<a href="../../" target="_blank" title="城乡建设局" class="CurrChnlCls">城乡建设局</a>&nbsp;>&nbsp;<a href="../" target="_blank" title="行政备案" class="CurrChnlCls">行政备案</a></p>
+  <div class="content">
+    <div class="title">
+    	<h2>工程竣工验收备案</h2>
+        <h6><label>来源：望城区政府门户网站</label>
+            <label>发布时间：2015-05-20</label>					
+	    <label>作者：区住房和城乡建设局</label>
+         </h6>
+    </div>
+    <div class="con">
+      <p align="justify"><style type="text/css">
+
+.TRS_Editor P {
+
+LINE-HEIGHT: 1.7; MARGIN-TOP: 0.5em; FONT-FAMILY: 宋体; MARGIN-BOTTOM: 0.5em; FONT-SIZE: 12pt
+
+}
+
+.TRS_Editor DIV {
+
+LINE-HEIGHT: 1.7; MARGIN-TOP: 0.5em; FONT-FAMILY: 宋体; MARGIN-BOTTOM: 0.5em; FONT-SIZE: 12pt
+
+}
+
+.TRS_Editor TD {
+
+LINE-HEIGHT: 1.7; MARGIN-TOP: 0.5em; FONT-FAMILY: 宋体; MARGIN-BOTTOM: 0.5em; FONT-SIZE: 12pt
+
+}
+
+.TRS_Editor TH {
+
+LINE-HEIGHT: 1.7; MARGIN-TOP: 0.5em; FONT-FAMILY: 宋体; MARGIN-BOTTOM: 0.5em; FONT-SIZE: 12pt
+
+}
+
+.TRS_Editor SPAN {
+
+LINE-HEIGHT: 1.7; MARGIN-TOP: 0.5em; FONT-FAMILY: 宋体; MARGIN-BOTTOM: 0.5em; FONT-SIZE: 12pt
+
+}
+
+.TRS_Editor FONT {
+
+LINE-HEIGHT: 1.7; MARGIN-TOP: 0.5em; FONT-FAMILY: 宋体; MARGIN-BOTTOM: 0.5em; FONT-SIZE: 12pt
+
+}
+
+.TRS_Editor UL {
+
+LINE-HEIGHT: 1.7; MARGIN-TOP: 0.5em; FONT-FAMILY: 宋体; MARGIN-BOTTOM: 0.5em; FONT-SIZE: 12pt
+
+}
+
+.TRS_Editor LI {
+
+LINE-HEIGHT: 1.7; MARGIN-TOP: 0.5em; FONT-FAMILY: 宋体; MARGIN-BOTTOM: 0.5em; FONT-SIZE: 12pt
+
+}
+
+.TRS_Editor A {
+
+LINE-HEIGHT: 1.7; MARGIN-TOP: 0.5em; FONT-FAMILY: 宋体; MARGIN-BOTTOM: 0.5em; FONT-SIZE: 12pt
+
+}</style><style type="text/css">
+
+P.MsoNormal {
+
+TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN: 0pt; FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10.5pt
+
+}
+
+SPAN.msoIns {
+
+COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+
+}
+
+SPAN.msoDel {
+
+COLOR: red; TEXT-DECORATION: line-through
+
+}</style><style type="text/css">
+
+.TRS_Editor P{margin-top:0.5em;margin-bottom:0.5em;line-height:1.7;font-family:宋体;font-size:12pt;}.TRS_Editor DIV{margin-top:0.5em;margin-bottom:0.5em;line-height:1.7;font-family:宋体;font-size:12pt;}.TRS_Editor TD{margin-top:0.5em;margin-bottom:0.5em;line-height:1.7;font-family:宋体;font-size:12pt;}.TRS_Editor TH{margin-top:0.5em;margin-bottom:0.5em;line-height:1.7;font-family:宋体;font-size:12pt;}.TRS_Editor SPAN{margin-top:0.5em;margin-bottom:0.5em;line-height:1.7;font-family:宋体;font-size:12pt;}.TRS_Editor FONT{margin-top:0.5em;margin-bottom:0.5em;line-height:1.7;font-family:宋体;font-size:12pt;}.TRS_Editor UL{margin-top:0.5em;margin-bottom:0.5em;line-height:1.7;font-family:宋体;font-size:12pt;}.TRS_Editor LI{margin-top:0.5em;margin-bottom:0.5em;line-height:1.7;font-family:宋体;font-size:12pt;}.TRS_Editor A{margin-top:0.5em;margin-bottom:0.5em;line-height:1.7;font-family:宋体;font-size:12pt;}</style>
+<div>
+<p align="justify">　　<span>事项类型</span><span><u>&nbsp;&nbsp;服务事项&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span>法定期限</span><span><u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;无&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></span>&nbsp;</p>
+<p align="justify">　　<span>实施机关</span><span><u>&nbsp;&nbsp;长沙市望城区城乡建设局&nbsp;&nbsp;&nbsp; &nbsp;</u>&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 承诺期限</span><span><u>&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp; &nbsp;&nbsp;个工作日</u></span>&nbsp;</p>
+<p align="justify">　　<span>办事对象</span><span><u>&nbsp;&nbsp;法人、其他组织&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>咨询电话<u>&nbsp;</u></span><span><u>&nbsp;0731-88084702&nbsp;&nbsp;&nbsp;</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;</p>
+<p align="justify">　　<span>办事地点<u>&nbsp; </u></span><span><u>长沙市望城区高塘岭街道望府路&nbsp;198&nbsp;号政务中心2楼城乡建设局窗口</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>监督投诉电话</span><u><span>0731-88080110&nbsp; </span></u></p>
+<p align="justify"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span><span>办事时间<span><u>　周一至周五（法定节假日除外）夏季作息时间（7月1日-9月30日）：上午9:00-12:00，下午13:30-17:30；冬季作息时间（10月1日-次年6月30日）：上午9:00-12:00,下午13:00-17:00</u></span></span></span>&nbsp;&nbsp;&nbsp;&nbsp; <span>来办事窗口的最少次数：</span><span><u>2 </u></span><span>次</span>&nbsp;</p>
+<p align="justify">　<strong>　<span>一、申报条件：</span></strong>&nbsp;</p>
+<p align="justify">　　<span>1.建设单位应在竣工验收合格之日起15日内申请办理备案手续，备案资料齐全，备案资料表格及填写应规范。</span>&nbsp;</p>
+<p align="justify">　　<span>2.工程质量达到国家现行质量检验评定标准、规范的要求。①施工单位按承包合同约定的内容施工完毕，已由企业总工程师或技术负责人组织有关人员对承包范围内（含分包项目）的工程进行了全面自检，且符合国家有关标准、规范和设计图纸的要求，已由企业法人代表、技术负责人分别签署了《单位工程质量综合评定表》，并加盖单位公章。②勘察、设计单位已由单位总工程师或项目技术负责人组织本单位有关专业人员参与了对竣工项目的检查，且符合国家有关规范、规程、标准要求，由总工程师或项目负责人和注册执业人员签署认可意见，加盖单位公章。③对于委托监理的工程项目，监理单位由总监理工程师组织有关人员进行全面核查，符合国家有关规范、标准和设计要求，已由总监签署了工程监理质量评价意见和质量评定文件，并加盖单位公章。④建设单位已按合同约定支付工程款。</span>&nbsp;</p>
+<p align="justify">　　<span><strong><font style="font-size: 12pt">二、需提交的材料：</font></strong></span>&nbsp;</p>
+<p align="justify">　　<span>1.工程竣工验收备案表；</span>&nbsp;</p>
+<p align="justify">　　<span>2.建设工程质量监督报告；</span>&nbsp;</p>
+<p align="justify">　　<span>3.工程竣工验收报告；</span>&nbsp;</p>
+<p align="justify">　　<span>4.工程质量评价报告；</span>&nbsp;</p>
+<p align="justify">　　<span>5.工程施工质量验收申请报告；</span>&nbsp;</p>
+<p align="justify">　　<span>6.工程竣工验收申请报告；</span>&nbsp;</p>
+<p align="justify">　　<span>7.单位工程质量竣工验收记录；</span>&nbsp;</p>
+<p align="justify">　　<span>8.单位工程质量控制资料核查记录；</span>&nbsp;</p>
+<p align="justify">　　<span>9.单位工程安全和功能检验记录；</span>&nbsp;</p>
+<p align="justify">　　<span>10.单位工程观感质量验收检查记录；</span>&nbsp;</p>
+<p align="justify">　　<span>11.分户验收记录；（工业厂房、市政工程无需提供）</span>&nbsp;</p>
+<p align="justify">　　<span>12.安装工程检测结果通知单；（市政工程无需提供）</span>&nbsp;</p>
+<p align="justify">　　<span>13.节能办备案表；（工业厂房、市政工程无需提供）</span>&nbsp;</p>
+<p align="justify">　　<span>14.室内环境检测报告；（工业厂房、市政工程无需提供）</span>&nbsp;</p>
+<p align="justify">　　<span>15.规划许可证；</span>&nbsp;</p>
+<p align="justify">　　<span>16.施工许可证；</span>&nbsp;</p>
+<p align="justify">　　<span>17.施工图设计文件审查批准书；</span>&nbsp;</p>
+<p align="justify">　　<span>18.消防验收报告；</span>&nbsp;</p>
+<p align="justify">　　<span>19.防雷报告；</span>&nbsp;</p>
+<p align="justify">　　<span>20.建设工程竣工档案初验认可证和合格证；</span>&nbsp;</p>
+<p align="justify">　　<span>21.安全等级评定书；</span>&nbsp;</p>
+<p align="justify">　　<span>22.房屋建筑工程质量保修书；</span>&nbsp;</p>
+<p align="justify">　　<span>23.商品房屋质量保证书；（仅商品房提供）</span>&nbsp;</p>
+<p align="justify">　　<span>24.商品房屋使用说明书；（仅商品房提供）</span>&nbsp;</p>
+<p align="justify">　　<span>25.民工工资支付表；</span>&nbsp;</p>
+<p align="justify">　　<span>26.新型墙体材料主体竣工验收备案表；（市政工程无需提供）</span>&nbsp;</p>
+<p align="justify">　　<span>27.桩基检测报告。</span>&nbsp;</p>
+<p align="justify">　<strong>　<span>三、办理流程图：</span></strong>&nbsp;</p>
+<p align="justify">　&nbsp; <img style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" oldsrc="W020150520571759574253.png" complete="complete" src="./W020150520571759574253.png" /></p>
+<p align="justify">　　<span><strong><font style="font-size: 12pt">四、收费情况：</font></strong></span>&nbsp;</p>
+<p align="justify">　　<span>不收费</span>&nbsp;</p>
+<p align="justify"><font style="font-size: 12pt">　　<span style="font-size: 12pt"><strong style="font-size: 12pt">五、办件结果文件：</strong></span></font>&nbsp;</p>
+<p align="justify">　　<span>1.申请材料不齐全或者不符合法定形式的，当场出具《一次性告知单》交申办人，告知申请人需要补正的全部内容。</span>&nbsp;</p>
+<p align="justify">　　<span>2.&nbsp;对符合受理标准的，当场出具《受理通知书》交申办人。</span>&nbsp;</p>
+<p align="justify">　　<span>3.对不符合受理标准的，向申请人说明理由，当场出具《不予受理告知书》，不予受理。</span>&nbsp;</p>
+<p align="justify"><font style="font-size: 12pt">　　<span style="font-size: 12pt"><strong style="font-size: 12pt">六、法定依据：</strong></span></font>&nbsp;</p>
+<p align="justify">　　<span>1.《建设工程质量管理条例》（国务院令第279号）；</span>&nbsp;</p>
+<p align="justify">　　<span>2.《房屋建筑和市政基础设施工程竣工验收备案管理办法》（建设部令第2号）；</span>&nbsp;</p>
+<p align="justify">　　<span>3.《湖南省建设工程质量和安全生产管理条例》（湖南省第十届人民代表大会常务委员会公告第84号）。</span>&nbsp;</p>
+</div></p>
+            <div class="downfile" style="margin-top:20px;">                  
+            <input type="hidden" id="path" value="" /> 
+            <script>
+              var strs=new Array();
+              strs=document.getElementById("path").value.split(",");
+                  if(strs==""){
+                
+                  }else{
+               document.write("<font size='4' color='#212121'>相关附件下载：</font>");
+               }
+            </script> 
+           
+        </div>
+    </div>
+    <div class="share">
+  
+						<!-- jiathis -->
+								<!-- <div id="ckepop" style="float:right; padding-top:10px;">
+									<span class="jiathis_txt">分享到：</span>                                   
+									<a class="jiathis_button_tpeople" title="分享到人民微博"><span class="jiathis_txt jtico jtico_tpeople"></span></a>
+									<a class="jiathis_button_txinhua" title="分享到新华微博"><span class="jiathis_txt jtico jtico_txinhua"></span></a>
+									<a class="jiathis_button_t163" title=""></a>
+									<a class="jiathis_button_tsohu" title=""></a>
+									<a class="jiathis_button_tsina" title="分享到微博"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+									<a class="jiathis_button_qzone" title="分享到QQ空间"><span class="jiathis_txt jtico jtico_qzone"></span></a>
+									<a class="jiathis_button_tqq" title="分享到腾讯微博"><span class="jiathis_txt jtico jtico_tqq"></span></a>
+									<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank" title=""></a>
+								</div> -->
+   <div class="bdsharebuttonbox" style="float:right; margin-top:6px;"> 
+    <span style="line-height:32px;">分享到：</span> 
+  
+<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>  
+<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>  
+<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>  
+<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>  
+<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+<a href="#" class="bds_more" data-cmd="more"></a>  
+</div>  
+<script>  
+window._bd_share_config={  
+        "common":{  
+            "bdPopTitle":"您的自定义pop窗口标题",  
+            "bdSnsKey":{},  
+            "bdText":"此处填写自定义的分享内容",   
+            "bdMini":"2",  
+            "bdMiniList":false,  
+            "bdPic":"http://localhost/centlight/public/attachment/201410/24/14/5449ef39574f5_282x220.jpg", /* 此处填写要分享图片地址 */  
+            "bdStyle":"0",  
+            "bdSize":"16"  
+            },  
+        "share":{}  
+};  
+with(document)0[  
+                (getElementsByTagName('head')[0]||body).  
+                appendChild(createElement('script')).  
+                src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)  
+];  
+        </script>
+                </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<!--main_end--> 
+<!--footer_start-->
+<script type="text/javascript" src="http://hnsa.hugedata.com.cn:18080/webtracker/ha/?siteid=1000000070&sinput=user-defined01&sbutton=user-defined02" charset="UTF-8"></script>
+<div class="footer">
+  <div class="center">
+    <div class="left"><a href="//bszs.conac.cn/sitename?method=show&amp;id=184A6ADAEA922678E053022819AC9241" target="_blank"><img id="imgConac" vspace="0" hspace="0" border="0" src="../../../../../images/red.png" data-bd-imgshare-binded="1" /></a></div>
+    <div class="con">
+      <p>主办单位：长沙市望城区人民政府&nbsp;&nbsp;湘ICP备08000008 </p>
+      <p>承办单位：长沙市望城区电子政务办公室  </p>
+      <p>政务咨询：0731-88080110&nbsp;&nbsp;技术维护：0731-88084049  </p>
+      	<div style="width:400px;float:left;margin:0 auto;padding:2px 0px 0px 0px;">
+		 		<p style="display:inline-block;float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#fff;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43011202000182 
+
+" style="display:inline;text-decoration:none;height:20px;line-height:10px; color:#fff;font-size:14px;"><img src="../../../../../images/batb.png" style="float:left;" />&nbsp;湘公网安备 43011202000182号</a> &nbsp;网站标识码 4301120002 </p>
+		 	</div>  
+
+    </div>
+
+    <div class="right" > <script id="_jiucuo_" sitecode='4301120002' src='../../../../../images/jiucuo.js'></script><a href="http://www.wangcheng.gov.cn/swewm/" target="_blank" style="margin-left:20px;"><img src="../../../../../images/govx.jpg" /></a></div>
+  </div>
+</div>
+<!--footer_end--> 
+<script>jQuery(".rolls").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",interTime:50,trigger:"click",vis:1});</script> 
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343096743047298" charset="utf-8"></script>
+</body>
+</html>
