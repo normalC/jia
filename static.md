@@ -29,11 +29,11 @@
 
 
 
-![](image/20190605wangcheng/区长1.jpg)
+![区长1](image/20190605wangcheng/qu1.jpg)
 
-![区长2](image/20190605wangcheng/区长2.jpg)
+![区长2](image/20190605wangcheng/qu2.jpg)
 
-![区长3](image/20190605wangcheng/区长3.jpg)
+![区长3](image/20190605wangcheng/qu3.jpg)
 
 
 
