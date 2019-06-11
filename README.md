@@ -10,6 +10,8 @@
 
 [5](Politics.md)
 
-[6](law.md)
+[6](vote.md)
 
-[7](statement.md)
+[7](law.md)
+
+[8](statement.md)
