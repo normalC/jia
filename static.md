@@ -23,3 +23,18 @@
 
 [嘉宇西苑主楼检测鉴定方案](./_static/ProblemSummary/嘉宇西苑主楼检测鉴定方案.html)
 
+
+
+## 区长指示20190605
+
+
+
+![](image/20190605wangcheng/区长1.jpg)
+
+![区长2](image/20190605wangcheng/区长2.jpg)
+
+![区长3](image/20190605wangcheng/区长3.jpg)
+
+
+
+
