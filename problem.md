@@ -278,3 +278,55 @@
 ![17](image/20190422/17.jpg)
 
 ![18](image/20190422/18.jpg)
+
+### 20190605
+
+![qu1](image/20190605wangcheng/qu1.jpg)
+
+![qu2](image/20190605wangcheng/qu2.jpg)
+
+![qu3](image/20190605wangcheng/qu3.jpg)
+
+### 20190612
+
+![](image/20190612/1.JPG)
+
+![END](image/20190612/END.JPG)
+
+![vote1](image/20190612/vote1.jpg)
+
+![vote2](image/20190612/vote2.jpg)
+
+### 20190621
+
+![1](image/20190621/1.jpg)
+
+![3](image/20190621/3.jpg)
+
+![31](image/20190621/31.jpg)
+
+![32](image/20190621/32.jpg)
+
+![meeting201905181](image/20190621/meeting201905181.jpg)
+
+![meeting201905182](image/20190621/meeting201905182.jpg)
+
+
+
+### 20190813
+
+![1](image/20190813/1.jpg)
+
+![2](image/20190813/2.jpg)
+
+![3](image/20190813/3.jpg)
+
+![4](image/20190813/4.jpg)
+
+![problem1](image/20190813/problem1.jpg)
+
+![problem2](image/20190813/problem2.png)
+
+
+
+
