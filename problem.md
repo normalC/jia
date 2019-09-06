@@ -327,6 +327,11 @@
 
 ![problem2](image/20190813/problem2.png)
 
+### 20190904
 
 
+
+![notice1](image/20190904/notice1.jpg)
+
+![notice2](image/20190904/notice2.jpg)
 
